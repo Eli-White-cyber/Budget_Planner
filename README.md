@@ -44,6 +44,3 @@ The Monthly Budget Planner is a web application designed to help users track the
 - Include more interactive charts or additional visualization options.  
 
 ---
-
-## Project Structure
-
