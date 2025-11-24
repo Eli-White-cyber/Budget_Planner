@@ -1,0 +1,128 @@
+/* ----- GENERAL ----- */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+}
+
+h1, h2 {
+  margin: 0 0 15px;
+}
+
+/* ----- MAIN LAYOUT ----- */
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+/* ----- CARD STYLE ----- */
+.card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* ----- FLEX LAYOUT FOR BUDGET + CHARTS ----- */
+.layout-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left-side {
+  flex: 1 1 400px;
+}
+
+.right-side {
+  flex: 1 1 300px;
+}
+
+/* ----- FORMS ----- */
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #292929;
+  color: white;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0bbf6a;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0da95d;
+}
+
+/* ----- TABLE ----- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border-bottom: 1px solid #333;
+  padding: 10px 5px;
+  text-align: left;
+}
+
+tr:hover {
+  background-color: #242424;
+}
+
+.delete-btn {
+  background-color: #b62828;
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+.delete-btn:hover {
+  background-color: #992020;
+}
+
+/* ----- PROGRESS BARS ----- */
+.progress-container {
+  background-color: #292929;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 15px;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  height: 15px;
+  width: 0%;
+  text-align: right;
+  padding-right: 5px;
+  color: white;
+  font-size: 10px;
+  line-height: 15px;
+  border-radius: 5px 0 0 5px;
+}
+
+/* ----- CHARTS ----- */
+.chart-canvas {
+  max-width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  background-color: transparent;
+}

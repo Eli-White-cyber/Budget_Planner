@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Planner</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Monthly Budget Planner</h1>
+  </header>
+
+  <main>
+
+    <!-- Income Input Section -->
+    <section id="income-section" class="card">
+      <h2>Enter Monthly Income</h2>
+      <form id="income-form">
+        <input type="number" id="income-input" placeholder="Enter income..." required />
+        <button type="submit">Save Income</button>
+      </form>
+    </section>
+
+    <!-- Category + Summary + Charts Section -->
+    <section id="budget-charts-section" class="card layout-flex">
+      
+      <!-- Left side: Categories & Summary -->
+      <div class="left-side">
+        <!-- Add Category -->
+        <section id="category-section">
+          <h2>Add Budget Category</h2>
+          <form id="category-form">
+            <input type="text" id="category-name" placeholder="Category name" required />
+            <input type="number" id="category-amount" placeholder="Amount" required />
+            <button type="submit">Add</button>
+          </form>
+        </section>
+
+        <!-- Categories List -->
+        <section id="categories-list-section">
+          <h2>Budget Breakdown</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Amount</th>
+                <th>Percent</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody id="categories-body">
+              <!-- JS adds rows here -->
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Summary -->
+        <section id="summary-section">
+          <h2>Summary</h2>
+          <p>Total Spending: <span id="total-spending">$0</span></p>
+          <p>Remaining: <span id="remaining">$0</span></p>
+          <p>Budget Rating: <span id="rating">—</span></p>
+        </section>
+      </div>
+
+      <!-- Right side: Charts -->
+      <div class="right-side">
+        <h2>Visual Breakdown</h2>
+        <canvas id="pieChart" class="chart-canvas"></canvas>
+        <canvas id="barChart" class="chart-canvas"></canvas>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Budget Planner</p>
+    <p> Made By Eli White INC.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
